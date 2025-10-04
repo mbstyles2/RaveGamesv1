@@ -1,0 +1,368 @@
+/* Navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    /* background: rgb(17, 17, 17); */
+    background-color: black;
+    color: #ffffff;
+    
+  }
+  .head{
+    text-decoration: 1px underline gold;
+  
+  }
+
+
+header{
+    position:sticky;
+    top:0;
+    left:0;
+    width:80%;
+    margin: 0 auto;
+    z-index: 1000;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom: #ffcc00 2px solid;
+  }
+  
+  .navbar {
+    background: rgb(107, 1, 107);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    
+    
+  }
+  .navbar img{
+    border-radius: 50%;
+  }
+  
+  .logo {
+    color: #ffcc00;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    /* margin-right: 30rem; */
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a.active,
+  .nav-links a:hover {
+    color: #ffcc00;
+    background: none;
+  }
+  #navToggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:1.75rem;
+    line-height:1;
+    color:#ffcc00;
+    cursor:pointer;
+  }
+/* First container */
+  .first{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 300px; */
+  }
+  .first p{
+    text-align: justify;
+  }
+
+  .first .container{
+    display: flex;
+    gap: 20px;
+    padding: 1rem;
+  }
+  .first-imge{
+    text-align: center;
+    padding: 30px;
+    justify-content: center;
+  
+  }
+  /* .first-imge:hover{
+    transition: ease-in 1.5;
+    transform: scale(1.2);
+
+  } */
+  .first-imge p{
+    text-align: justify;
+  }
+  .first img{
+    border-radius: 50%;
+  }
+  .first a, .second a{
+    text-decoration: none;
+    background-color: purple;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 15px;
+  }
+ a:hover{
+  background-color: white;
+  color: purple;
+ }
+/* Second Container */
+.what img{
+  transform: rotate(-40deg); 
+} 
+.second{
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+.what{
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+}
+.what p{
+  text-align: justify;
+}
+.card-con{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  height: 420px;
+  width: 300px;
+  border-radius: 15%;
+  margin: 20px;
+  background: linear-gradient(purple,pink);
+  border: 2px gold solid;
+}
+.card p{
+  color: purple;
+}
+.card img{
+  margin: 12px 0;
+  height: 200px;
+}
+
+
+/* third con */
+.slideshow-container {
+  max-width: 800px;
+  margin: 50px auto;
+  /* position: relative; */
+  background-color: purple;
+  box-shadow: 2px 3px 9px palevioletred;
+  border: 2px #ffcc00 solid;
+  padding: 20px;
+  border-radius: 12px;
+  
+}
+.slide {
+  display: none;
+}
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.caption {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 40%;
+  left: 90%;
+  width: auto;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+  user-select: none;
+}
+.prev { left: 0; }
+.next { right: 0; }
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+.img{
+  border-radius: 14px;
+}
+
+
+
+/* fourth con */
+.fourth{
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.info{
+  display: flex;
+  gap: 0.7rem;
+  padding: 0.7rem;
+  margin: 1rem;
+}
+.info img{
+  border: 4px solid gold;
+  border-radius: 50%;
+  align-self: center;
+  /* text-align: center; */
+}
+.feedback{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* color:#fff; */
+  /* flex-wrap: wrap; */
+}
+.feedback .card{
+  height: 200px;
+}
+.feedback h4{
+  color: purple;
+}
+.feedback p{
+  color:#fff;
+  margin: 12px;
+}
+
+
+
+/* footer */
+footer{
+  height: 300px;
+  background-color: purple;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 12rem;
+  padding: 20px;
+  
+}
+footer input{
+  padding: 15px 29px ;
+  border: none;
+  /* width: 50%; */
+}
+.services, .contact {
+  padding: 20px;
+  text-align: justify;
+}
+footer img{
+  border-radius: 50%;
+ 
+}
+
+/* ani */
+.slide-in-top {
+  animation: slideTop 1.5s ease-out;
+  position: relative;
+}
+@keyframes slideTop {
+  from { top: -100px; opacity: 0; }
+  to { top: 0; opacity: 1; }
+}
+.slide-in-left {
+  animation: slideLeft 1.5s ease-out;
+  position: relative;
+}
+@keyframes slideLeft {
+  from { left: -100%; opacity: 0; }
+  to { left: 0; opacity: 1; }
+}
+
+/* ani */
+
+/* Media queries */
+
+  @media (max-width:868px){
+    .nav-links{
+      position:fixed;
+      top:126px;
+      right:-100%;
+      width:100%;
+      height:calc(100% - 64px);
+      flex-direction:column;
+      background: purple;;
+      padding:2rem 1.25rem;
+      transition:right .3s ease;
+      box-shadow:-2px 0 8px rgba(0,0,0,.05);
+    }
+ 
+    .nav-links.open{
+      right:0;
+    }
+    #navToggle{
+      display:block;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .first,.container, .what, .card-con, .info, .feedback{
+      flex-direction: column;
+    }
+    header h1{
+      font-size: 25px;
+    }
+    header img{
+      width:20%;
+    }
+    img{
+      width: 300px;
+    }
+    .slideshow-container{
+      margin: 32px 10px;
+    }
+    .card{
+      height: 470px;
+    }
+    .card img{
+      width: 200px;
+    }
+    .feedback{
+      align-items: center;
+      text-align: center;
+    }
+    footer{
+      height: auto;
+      flex-direction: column;
+      gap:0;
+      /* display: none; */
+    }
+    .prev,.next{
+      left: 0%;
+      margin: 4.2rem;
+    }
+}
+@media (min-width:868px) and (max-width:1000px){
+footer{
+  gap: 2rem;
+}
+
+}
