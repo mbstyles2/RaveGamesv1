@@ -357,12 +357,13 @@ footer img{
     }
     .prev,.next{
       left: 0%;
-      margin: 4.2rem;
+      margin: 3rem;
     }
 }
 @media (min-width:868px) and (max-width:1000px){
 footer{
   gap: 2rem;
 }
+
 
 }
