@@ -382,4 +382,13 @@ footer{
 
 }
 
+@media (max-width:400px){
+
+.prev,.next{
+  left: 0%;
+  margin: 3.8rem;
+}
+}
+
+
 
