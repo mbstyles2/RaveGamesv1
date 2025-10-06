@@ -389,6 +389,15 @@ footer{
   margin: 3.8rem;
 }
 }
+@media (max-width:300px){
+
+.prev,.next{
+  left: 0%;
+  margin: 3rem;
+}
+}
+
+
 
 
 
