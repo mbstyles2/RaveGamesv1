@@ -137,7 +137,7 @@ header{
 }
 .what{
   display: flex;
-  padding: 1rem;
+  padding: 0rem;
   text-align: center;
 }
 .what p{
@@ -265,10 +265,21 @@ footer{
   padding: 20px;
   
 }
+
 footer input{
   padding: 15px 29px ;
   border: none;
+  margin: 7px;
+  border-radius: 12px;
   /* width: 50%; */
+}
+input[type=submit]{
+  background-color: #ffcc00;
+  color: #fff;
+}
+input[type=submit]:hover{
+  background-color: purple;
+  border: 1px solid #ffcc00;
 }
 .services, .contact {
   padding: 20px;
@@ -370,4 +381,5 @@ footer{
     }
 
 }
+
 
