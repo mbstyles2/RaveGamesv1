@@ -1,4 +1,9 @@
 /* Navbar */
+
+/* @import url('https://fonts.cdnfonts.com/css/bebas-neue'); */
+
+@import url('https://fonts.cdnfonts.com/css/russo-one');
+                
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +11,14 @@
   }
   
   body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Russo One', sans-serif;
+    /* font-family: 'Bebas Neue', sans-serif; */
     line-height: 1.6;
     /* background: rgb(17, 17, 17); */
     background-color: black;
     color: #ffffff;
+    /* overflow-x: hidden; */
     
   }
   .head{
@@ -131,31 +139,33 @@ header{
 } 
 .second{
   padding: 10px;
+  justify-content: center;
   align-items: center;
   text-align: center;
   height: auto;
 }
 .what{
   display: flex;
-  padding: 0rem;
+  /* padding: 1rem; */
   text-align: center;
 }
 .what p{
   text-align: justify;
 }
 .card-con{
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .card{
-  height: 420px;
-  width: 300px;
+  height: auto;
+  width: 350px;
   border-radius: 15%;
   margin: 20px;
   background: linear-gradient(purple,pink);
   border: 2px gold solid;
+  padding: 20px;
 }
 .card p{
   color: purple;
@@ -265,21 +275,22 @@ footer{
   padding: 20px;
   
 }
-
 footer input{
   padding: 15px 29px ;
   border: none;
   margin: 7px;
   border-radius: 12px;
+  
   /* width: 50%; */
 }
 input[type=submit]{
   background-color: #ffcc00;
-  color: #fff;
+  color: black;
 }
 input[type=submit]:hover{
   background-color: purple;
   border: 1px solid #ffcc00;
+  color: #fff ;
 }
 .services, .contact {
   padding: 20px;
@@ -339,7 +350,7 @@ footer img{
       flex-direction: column;
     }
     header h1{
-      font-size: 24px;
+      font-size: 25px;
     }
     header img{
       width:20%;
@@ -364,21 +375,19 @@ footer img{
       height: auto;
       flex-direction: column;
       gap:0;
+      justify-content: center;
       /* display: none; */
     }
     .prev,.next{
       left: 0%;
-      margin: 4rem;
+      margin: 4.1rem;
     }
 }
+
 @media (min-width:868px) and (max-width:1000px){
 footer{
   gap: 2rem;
 }
- .prev,.next{
-      left: 0%;
-      margin: 4.5rem;
-    }
 
 }
 
@@ -389,17 +398,11 @@ footer{
   margin: 3.8rem;
 }
 }
+
 @media (max-width:360px){
 
-.prev,.next{
-  left: 0%;
-  margin: 3rem;
+  .prev,.next{
+    left: 0%;
+    margin: 3rem
+  }
 }
-}
-
-
-
-
-
-
-
