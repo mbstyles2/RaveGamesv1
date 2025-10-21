@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Rave Games</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/webfonts/all.css">
+</head>
+<body>
+  <header class="navbar">
+    <img src="/img/rave.png" width="70px" alt="Rv">
+    <h1>Rave Games</h1>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="services.html" class="active"><i class="fa fa-gears"></i> Services</a></li>
+        <li><a href="about.html"><i class="fa fa-hands"></i> About</a></li>
+      </ul>
+      <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+  </header>
+
+  <section class="second slide-in-left">
+    <h2 class="head" style="text-align:center;">Our Services</h2>
+    <p style="text-align:center;">At Rave Games, we bring ideas to life through creativity, technology, and storytelling.</p>
+    <div class="card-con">
+      <div class="card">
+        <img src="/img/Street.jpg" alt="Game Dev">
+        <h3>Game Development</h3>
+        <p>We develop fun, challenging, and visually stunning games tailored to different audiences. Our games combine passion with top-tier performance.</p>
+      </div>
+      <div class="card">
+        <img src="/img/blade.png" alt="Design">
+        <h3>Game Design & Animation</h3>
+        <p>Our creative designers craft memorable characters, immersive worlds, and dynamic gameplay experiences that capture players’ imagination.</p>
+      </div>
+      <div class="card">
+        <img src="/img/ay (1).png" alt="Story">
+        <h3>Story & Script Writing</h3>
+        <p>We design rich narratives and emotional storytelling that connect deeply with players through every mission and dialogue.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fourth slide-in-left">
+    <h2 class="head" style="text-align:center;">Why Choose Us?</h2>
+    <div class="info">
+      <img src="/img/IMG-20250930-WA0023.png" width="300px" alt="">
+      <p>We blend creativity with technology to create experiences that stand out. Our team works passionately to deliver polished, high-performing games that players love — every time.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contact">
+      <h2 style="text-decoration: gold underline;">RAVE GAMES</h2>
+      <p>Send an email</p> 
+      <form action="">
+          <input type="email" placeholder="Send us a mail">
+          <input type="submit" value="Send">
+      </form>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+    <img src="/img/rave.png" alt="">
+    <div class="services">
+      <h3>Our services</h3>
+      <p><i class="fa fa-gamepad"></i> Game development</p>
+      <p><i class="fa fa-paintbrush"></i> Graphic design</p>
+      <p><i class="fa fa-file"></i> Project Management</p>
+    </div>
+  </footer>
+  <p style="text-align:center;">© 2025 Rave Games. All rights reserved.</p>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click',()=>navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>navLinks.classList.remove('open')));
+  </script>
+</body>
+</html>

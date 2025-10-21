@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Rave Games</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/webfonts/all.css">
+</head>
+<body>
+  <header class="navbar">
+    <img src="/img/rave.png" width="70px" alt="Rv">
+    <h1>Rave Games</h1>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="services.html"><i class="fa fa-gears"></i> Services</a></li>
+        <li><a href="about.html" class="active"><i class="fa fa-hands"></i> About</a></li>
+      </ul>
+      <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+  </header>
+
+  <section class="first slide-in-top">
+    <div class="container">
+      <img src="/img/rg.png" width="400px" alt="logo">
+      <div class="block">
+        <h1>About Rave Games</h1>
+        <p>At Rave Games, we create unique, story-driven experiences that blend creativity, technology, and passion. We believe in crafting games that inspire, connect, and challenge players to think beyond the ordinary.</p>
+        <br>
+        <p>Founded by a team of visionary developers and artists, we strive to redefine interactive entertainment in Africa and beyond — through innovation, storytelling, and immersive gameplay.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="second slide-in-left">
+    <h2 class="head" style="text-align:center;">Our Vision & Mission</h2>
+    <div class="what">
+      <img src="/img/IMG-20250930-WA0025.png" width="400px" alt="team">
+      <p>Our mission is to deliver games that resonate with culture and creativity while pushing the boundaries of interactive storytelling. We envision a future where African gaming stands tall on the global stage — where imagination meets innovation.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contact">
+      <h2 style="text-decoration: gold underline;">RAVE GAMES</h2>
+      <p>Send an email</p> 
+      <form action="">
+          <input type="email" placeholder="Send us a mail">
+          <input type="submit" value="Send">
+      </form>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+    <img src="/img/rave.png" alt="">
+    <div class="services">
+      <h3>Our services</h3>
+      <p><i class="fa fa-gamepad"></i> Game development</p>
+      <p><i class="fa fa-paintbrush"></i> Graphic design</p>
+      <p><i class="fa fa-file"></i> Project Management</p>
+    </div>
+  </footer>
+  <p style="text-align:center;">© 2025 Rave Games. All rights reserved.</p>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click',()=>navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>navLinks.classList.remove('open')));
+  </script>
+</body>
+</html>
