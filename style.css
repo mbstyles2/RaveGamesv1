@@ -171,6 +171,7 @@ header{
   transform: translateY(-10px); /* slide up */
   background: linear-gradient(pink, purple); /* swap or fade to secondary */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* optional for depth */
+  color: white;
 }
 .card p{
   color: purple;
@@ -412,3 +413,4 @@ footer{
   }
 
 }
+
