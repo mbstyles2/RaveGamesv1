@@ -167,6 +167,11 @@ header{
   border: 2px gold solid;
   padding: 20px;
 }
+.card:hover {
+  transform: translateY(-10px); /* slide up */
+  background: linear-gradient(pink, purple); /* swap or fade to secondary */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* optional for depth */
+}
 .card p{
   color: purple;
 }
@@ -405,4 +410,5 @@ footer{
     left: 0%;
     margin: 3rem
   }
+
 }
