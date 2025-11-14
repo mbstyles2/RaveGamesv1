@@ -421,14 +421,13 @@ footer img{
       position: relative;
     }
     
-    .prev, .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    .what img{
+      transform: rotate(0deg); 
+    } 
     
     .prev { left: 10px; }
     .next { right: 10px; }
+    
     
 }
 
@@ -455,3 +454,4 @@ footer{
   }
 
 }
+
