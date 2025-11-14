@@ -118,7 +118,7 @@ header{
     text-align: justify;
   }
   .first img{
-    border-radius: 50%;
+    border-radius: 5%;
   }
   .first a, .second a{
     text-decoration: none;
@@ -419,5 +419,6 @@ footer{
   }
 
 }
+
 
 
