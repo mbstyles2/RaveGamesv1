@@ -55,7 +55,7 @@ header{
     z-index: 1000;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom: #ffcc00 2px solid;
+    border-bottom: #ffcc00 4px solid;
   }
   
   .navbar {
@@ -453,4 +453,5 @@ footer{
     left: 0%;
     margin: 3rem
   }
+
 }
