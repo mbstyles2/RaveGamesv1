@@ -137,6 +137,7 @@ header{
     text-align: justify;
   }
   .first img{
+    width: 500px;
     border-radius: 5%;
   }
   .first a, .second a{
@@ -162,6 +163,9 @@ header{
   align-items: center;
   text-align: center;
   height: auto;
+}
+.second img{
+  width: 600px;
 }
 .what{
   display: flex;
@@ -251,6 +255,9 @@ header{
   align-items: center;
   justify-content: center;
   margin: 5rem 0;
+}
+.fourth img{
+  width: 500px;
 }
 
 .info{
