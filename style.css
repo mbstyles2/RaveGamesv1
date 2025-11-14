@@ -5,25 +5,44 @@
 @import url('https://fonts.cdnfonts.com/css/russo-one');
                 
 * {
+    max-width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
   body {
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-family: 'Russo One', sans-serif;
-    /* font-family: 'Bebas Neue', sans-serif; */
-    line-height: 1.6;
-    /* background: rgb(17, 17, 17); */
+    justify-content: center;
     background-color: black;
+    overflow-x: hidden;
+
+    /* background: url('/img/Untitled\ design.png'); */
+    line-height: 1.6;
     color: #ffffff;
     /* overflow-x: hidden; */
     
   }
+  /* .bg-rings {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255,100,100,0.12), transparent 30%),
+    repeating-radial-gradient(circle at 70% 60%,
+    rgba(107, 5, 53, 0.384) 0 20px,
+    rgba(230, 25, 25, 0.02) 20px 40px),
+    linear-gradient(180deg, #000000 0%, #0b0d16 100%);
+  background-blend-mode: screen, overlay, normal;
+  } */
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
   .head{
     text-decoration: 1px underline gold;
-  
   }
 
 
@@ -159,32 +178,22 @@ header{
   justify-content: center;
 }
 .card{
-  height: auto;
   width: 350px;
+  height:500px;
   border-radius: 15%;
   margin: 20px;
   background: linear-gradient(purple,pink);
   border: 2px gold solid;
   padding: 20px;
 }
-.card:hover {
-  transform: translateY(-10px); /* slide up */
-  background: linear-gradient(pink, purple); /* swap or fade to secondary */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* optional for depth */
-}
 .card p{
   color: purple;
+  text-align: justify;
 }
 .card img{
   margin: 12px 0;
+  width: 170px;
   height: 200px;
-}
-.card h3:hover, .card h4:hover{
-  color:purple;
-}
-
-.card p:hover{
-  color:white;
 }
 
 
@@ -280,12 +289,12 @@ header{
 footer{
   height: 300px;
   background-color: purple;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
   display: flex;
   gap: 12rem;
   padding: 20px;
-  
+  width: auto;
 }
 footer input{
   padding: 15px 29px ;
@@ -348,6 +357,18 @@ footer img{
       transition:right .3s ease;
       box-shadow:-2px 0 8px rgba(0,0,0,.05);
     }
+    header {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+    header h1{
+      font-size: 25px;
+    }
+    header img{
+      width:20%;
+    }
  
     .nav-links.open{
       right:0;
@@ -360,16 +381,12 @@ footer img{
     }
     .first,.container, .what, .card-con, .info, .feedback{
       flex-direction: column;
+      margin: 0 auto;
     }
     .container img, .card-con{
      margin: 0 auto;
     }
-    header h1{
-      font-size: 25px;
-    }
-    header img{
-      width:20%;
-    }
+
     img{
       width: 300px;
     }
@@ -377,7 +394,7 @@ footer img{
       margin: 32px 10px;
     }
     .card{
-      height: 490px;
+      height: 470px;
     }
     .card img{
       width: 200px;
@@ -393,10 +410,19 @@ footer img{
       justify-content: center;
       /* display: none; */
     }
-    .prev,.next{
-      left: 0%;
-      margin: 4.1rem;
+    .slideshow-container {
+      position: relative;
     }
+    
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .prev { left: 10px; }
+    .next { right: 10px; }
+    
 }
 
 @media (min-width:868px) and (max-width:1000px){
@@ -420,10 +446,4 @@ footer{
     left: 0%;
     margin: 3rem
   }
-
 }
-
-
-
-
-
